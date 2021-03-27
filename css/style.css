@@ -1,0 +1,157 @@
+
+html{
+    
+    background-color: #FFFDF7;
+}
+
+
+@keyframes animation_test{
+    from{
+        
+        border: 5px solid #E2A3C7;
+    }
+    to{
+        
+        border: 5px solid #E2A3C7;
+    }
+}
+
+
+.main-container{
+    color: #FFFDF7;
+    text-align: center;
+    
+    background-color: #0A2342;
+    margin-top: -10px;
+    
+    margin-left: -10px;
+    position: fixed;
+    width: 115%;
+    text-align: center;
+    word-wrap: break-word;
+}
+nav,span,a{
+    color: #FFFDF7;
+}
+.titulo{
+    font-size: 40px;
+}
+.empresa{
+    text-align: left;
+}
+img,.Barrasup{
+    display: inline-flex;
+}
+img{
+    float: left;
+    border-radius: 50%;
+  
+}
+.Barrasup{
+    padding-left: 57rem;
+   
+}
+.menu{
+ 
+    display: flex;
+    align-content: right;
+  
+}
+.menu a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.menu a span{
+    transition: transform 0.2s ease-out;
+}
+.menu a span:first-child{
+    display: inline-block;
+    padding: 10px;
+}
+.menu a span:last-child{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-150%);
+}
+.menu i{
+    color: #FFFDF7;
+    font-size: 30px;
+}
+.menu a:hover span:first-child{
+    transform: translateY(150%);
+}
+.menu a:hover span:last-child,
+.menu[data-animation] a:hover span:last-child{
+    transform: none;
+} 
+.menu[data-animation="to-top"] a span:last-child{
+    transform: translateY(100%);
+    }
+.menu[data-animation="to-top"] a:hover span:first-child{
+    transform: translateY(-100%);
+}
+.menu[data-animation="to-right"] a span:last-child{
+    transform: translateX(-100%);
+}
+.menu[data-animation="to-right"] a:hover span:first-child{
+    transform: translateX(100%);
+}
+
+.menu[data-animation="to-left"] a span:last-child{
+    transform: translateX(100%);
+}
+
+.menu[data-animation="to-left"] a:hover span:first-child{
+    transform: translateX(-100%);
+}
+.cuerpoPrincipal{
+    text-align: center;
+}
+.Saludo{
+    color: #090B0A;
+    padding: 4rem;
+    height: 150px;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 150px;
+    background-color: #2CA58D;
+}
+
+.quien,.sucur,.serv{
+    color: #090B0A;
+    padding: 4rem;
+    height: 150px;
+    margin: 2rem;
+    
+    background-color: #84BC9C;
+
+}
+.doctor{
+    float: left;
+    border-radius: 50%;
+  
+}
+.contacto{
+    color: #FFFDF7;
+    background-color: #0A2342;
+   
+}
+.contacto{
+    display: inline-flex;
+}
+.pieizquierdo{
+    margin-left: 15rem;
+    margin-right: 200px;
+}
+.piederecho{
+    margin-left: 15rem;
+    margin-right: 25rem;
+}
